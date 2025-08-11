@@ -7,8 +7,8 @@ import { pool_bg1 } from '../assets/images';
             <span>资金安全保障中心</span>
             <span class="moreTab">简介 ></span>
         </div>
-        <div style="width:100%">
-            <van-image :src="pool_bg1" height="8rem" width="100%" radius="10"/>
+        <div style="max-width:100%; height:8rem;">
+            <van-image :src="pool_bg1" width="100%" height="100%"/>
         </div>
         
     </div>

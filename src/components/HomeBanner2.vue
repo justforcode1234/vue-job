@@ -13,9 +13,9 @@ import { icon_5 } from '../assets/images';
 .banner{
     background-image: url("../assets/images/icon-5.png");
     background-size: cover;
-    background-position:top;
+    background-position:center;
     background-repeat: no-repeat;
-    border-radius: 0.8rem;
+    width:100%;
     height:5rem;
     font-size:1rem;
     padding:0 1rem;
@@ -23,5 +23,6 @@ import { icon_5 } from '../assets/images';
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    border-radius: 10px;
 }
 </style>

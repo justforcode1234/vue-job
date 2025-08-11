@@ -29,7 +29,7 @@ import { vip,vip_bg,vip_3,vip_2} from '../assets/images';
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 0.8rem;
+    border-radius: 10px;
     height:5rem;
     font-size:0.7rem;
 }
