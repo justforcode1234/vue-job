@@ -3,7 +3,7 @@
   import {ref} from 'vue'
   import {homeActiveIcon,homeIcon,mainIcon,movieActiveIcon,movieIcon,msgActiveIcon,msgIcon,userActiveIcon,userIcon} from '../assets/images/index'
   
-  const tabActive=ref('')
+  const tabActive=ref(0)
   const HomeIcon={
     active:homeActiveIcon,
     inactive:homeIcon
@@ -27,15 +27,15 @@
 </script>
 
 <template>
-  <van-tabbar v-model="tabActive" active-color="#000000" class="tabBar">
-    <van-tabbar-item>
+  <van-tabbar v-model="tabActive" active-color="#000000" class="tabBar" route>
+    <van-tabbar-item to="/">
       <span>Home</span>
       <template #icon="props">
         <img :src="props.active? HomeIcon.active : HomeIcon.inactive" alt=""/>
       </template>
     </van-tabbar-item>
 
-    <van-tabbar-item>
+    <van-tabbar-item to="/movies">
       <span>Movies</span>
       <template #icon="props">
         <img :src="props.active? MovieIcon.active: MovieIcon.inactive" alt=""/>

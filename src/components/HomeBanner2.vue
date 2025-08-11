@@ -3,8 +3,11 @@ import { icon_5 } from '../assets/images';
 </script>
 <template>
     <div class="banner">
-        <span><span style="font-weight: 600;">实时票房</span>/今日大盘</span>
-        <span>382.99亿</span>
+        <div class="text-container">
+            <span style="color:gray;"><span style="font-weight: 600;color:black">实时票房</span>/今日大盘</span>
+            <span style="font-weight:500;margin-top: 5px;">382.99亿</span>
+        </div>
+
     </div>
 
 </template>
@@ -17,12 +20,16 @@ import { icon_5 } from '../assets/images';
     background-repeat: no-repeat;
     width:100%;
     height:5rem;
-    font-size:1rem;
-    padding:0 1rem;
+    border-radius: 10px;
+    display:flex;
+}
+
+.text-container{
     display:flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    border-radius: 10px;
+    padding:0 10px;
+    font-size:1rem;
 }
 </style>

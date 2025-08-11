@@ -7,7 +7,8 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
 // Path to your images folder
-const folder = path.join(__dirname, 'src/assets/images')
+// const folder = path.join(__dirname, 'src/assets/images')
+const folder = path.join(__dirname, 'src/components')
 
 const files = fs.readdirSync(folder)
 

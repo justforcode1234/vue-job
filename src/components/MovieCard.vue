@@ -1,17 +1,28 @@
 <script setup>
 defineProps({
-    movie:Object
+    movie:Object,
+    bg_color:{
+        default:''
+    },
+    titleColor:{
+        default:''
+    },
+    hideDesc:{
+        default:false
+    }
 })
+
 </script>
 <template>
     <van-card
         :centered=true
         :title="movie.title"
         :thumb="movie.image"
+        :style="{backgroundColor:bg_color,borderRadius:'15px',color:titleColor}"
       >
         <template #desc>
             <div class="desc">
-                <span v-if="movie.description" style="font-size: 0.75rem">{{movie.description}}</span>
+                <span v-if="movie.description || hideDesc " style="font-size: 0.75rem">{{movie.description}}</span>
                 <span style="font-size: 0.75rem; color: gray;">{{movie.date}}</span>
         </div>
         </template>
