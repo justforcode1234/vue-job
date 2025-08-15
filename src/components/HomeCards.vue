@@ -12,7 +12,7 @@
 </script>
 <template>
     <van-row justify="space-between" :style="{backgroundColor:bg,padding:'0.7rem',borderRadius:'1rem'}">
-        <van-col v-for="(icon,index) in icons" :keys="index">
+        <van-col v-for="(icon,index) in icons" :key="index">
             <van-image height="5rem" :src="icon"/>
         </van-col>
     </van-row>
